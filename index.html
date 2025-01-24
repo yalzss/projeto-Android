@@ -35,6 +35,10 @@
             color: rgba(255, 255, 255, 0.76);
             text-shadow: 0px 2px 5px black
         }
+        div.tudonomeio {
+            margin: auto auto;
+            display: block;
+        }
         main {
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
@@ -51,7 +55,7 @@
             text-align: center;
         }
         nav {
-            margin: -25px 0px 20px 0px
+            margin: -25px 0px 20px 0px;
         }
         nav > a {
             color: rgba(255, 255, 255, 0.76);
@@ -148,31 +152,32 @@
                padding: 10px 0px 10px 7px;
                border-radius: 5px 5px 0px 0px;
                text-align: center;
-               margin: -45px -7px -0px -9px;
+               margin: -45px -6px 0px -54px;
         }
         aside{
+            border-radius: 5px 5px 10px 10px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold; 
             background-color: rgb(4, 196, 132);
-            max-width: 900px;
-            height: 300px;
-            padding: 0px 6px 200px 7px;
+            max-width: 850px;
+            min-width: 245px;
+            height: 500px;
+            padding: 0px 6px 0px 54px;
             margin: auto auto;
             box-shadow: 0px 0px 15px -3px black;
-
         }
         aside > ul {
             columns: 2;
             list-style-position: inside;
             list-style-type: '\2714\00A0\00A0';
         }
-        footer {
+        footer > p {
             background-color: rgb(0, 58, 0);
             text-align: center;
-            padding: 2px 2px 2px 2px;
             color: white;
+            padding: 10px;
+            margin: 100px 0px 0px 0px;
         }
-        
     </style>
 </head>
 <body>
@@ -184,9 +189,9 @@
     <nav>
         <a href="#">Home</a>
         <a href="#">Notícias</a>
-        <a href="#">Curiosidades</a>
     </nav>
-    <main>
+    <div id="TUDO NO MEIO">
+<main>
         <section class="História">
             <article>
                   <h1 class="titulo2">HISTORIA DO MASCOTE ANDROID</h2>
@@ -223,8 +228,6 @@
                       </article>
             </article>
         </section>
-        
-            
     </main>
     <aside>
         <h3 class="titulodalista">Quer aprender mais?</h3>
@@ -249,6 +252,7 @@
         <p class="paragrafo">Acesse aqui o site <a href="https://www.android.com/intl/pt_br/what-is-android/" target="_blank" rel="external">Android History🔗</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
         <p class="paragrafo">Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o <br> sistema Android e seu simpático mascote</p>
     </aside>
+    </div>
     <footer>
         <p>Site criado por Alyson</p>
     </footer>
