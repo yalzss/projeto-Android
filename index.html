@@ -13,6 +13,12 @@
             font-weight: bold;
             font-style:normal
         }
+        * a:hover {
+            background-color: rgb(0, 255, 85);
+            color: rgb(0, 66, 0);
+             padding: 5px;
+             transition-duration: 1;
+            }
         * img {
             width: 100%;
         }
@@ -76,19 +82,14 @@
             padding:0.5px;
             transition-duration: 1;
         }
-        a:hover {
-            background-color: rgb(0, 255, 85);
-            color: rgb(0, 66, 0);
-            padding: 5px;
-            transition-duration: 1;
-        }
+
         .titulo {
             font-family: 'idroid.otf';
             font-weight: bold;
             font-style:normal;
             font-size: 2em;
             color: rgb(7, 73, 29);
-            background-color: rgba(176, 214, 178, 0.747);
+            background-image: linear-gradient(to right, rgba(136, 236, 141, 0.747), transparent);
         }
         .titulo2 {
             font-family: 'idroid.otf';
@@ -161,22 +162,29 @@
             background-color: rgb(4, 196, 132);
             max-width: 850px;
             min-width: 245px;
-            height: 500px;
+            height: 490px;
             padding: 0px 6px 0px 54px;
             margin: auto auto;
             box-shadow: 0px 0px 15px -3px black;
+            display: block;
         }
         aside > ul {
             columns: 2;
             list-style-position: inside;
             list-style-type: '\2714\00A0\00A0';
         }
+        aside > p > a {
+            text-decoration: none;
+            color: black;
+            background-color: rgb(77, 255, 0);
+
+        }
         footer > p {
             background-color: rgb(0, 58, 0);
             text-align: center;
             color: white;
             padding: 10px;
-            margin: 100px 0px 0px 0px;
+            margin: 250px 0px 0px 0px;
         }
     </style>
 </head>
@@ -231,7 +239,7 @@
     </main>
     <aside>
         <h3 class="titulodalista">Quer aprender mais?</h3>
-        <p class="paragrafo">Outro assunto curiso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética da versão 1.5 até a 9.0</p>
+        <p>Outro assunto curiso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética da versão 1.5 até a 9.0</p>
         <ul>
             <li><abbr title="Bolo de Copo">1.5 - Cupcake</abbr></li>
             <li><abbr title="Rosquinha">1.6 - Donut</abbr></li>
@@ -248,9 +256,9 @@
             <li><abbr title="Oreo">8.0 - Oreo</abbr></li>
             <LI><abbr title="Torta">9.0 - Pie</abbr></LI>
         </ul>
-        <p class="paragrafo">Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
-        <p class="paragrafo">Acesse aqui o site <a href="https://www.android.com/intl/pt_br/what-is-android/" target="_blank" rel="external">Android History🔗</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
-        <p class="paragrafo">Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o <br> sistema Android e seu simpático mascote</p>
+        <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
+        <p>Acesse aqui o site <a href="https://www.android.com/intl/pt_br/what-is-android/" target="_blank" rel="external" >Android History🔗</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
+        <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o <br> sistema Android e seu simpático mascote</p>
     </aside>
     </div>
     <footer>
