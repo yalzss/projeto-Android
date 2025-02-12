@@ -6,6 +6,7 @@
     <title>Meu Site</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"/>
     <style>
         @font-face {
             font-family:'idroid.otf';
@@ -34,13 +35,27 @@
         }
         header {
             background-image: linear-gradient(to bottom, rgb(41, 255, 155), rgba(0, 65, 5, 0.884));
-            padding: 1px 0px 15px 0px
+            padding: 1px 0px 15px 0px;
+
         }
         header > p {
+            margin: 0px 0px 30px 0px;
             text-align: center;
             color: rgba(255, 255, 255, 0.76);
             text-shadow: 0px 2px 5px black
         }
+        span#burguer {
+        margin: 0px 0px -30px 0px;
+        color: white;
+        display: none;
+        text-align: left;
+        cursor: pointer;
+        
+}
+        span#burguer:hover {
+        background-color: rgba(255, 255, 255, 0.349);
+        color: black;
+}
         div.tudonomeio {
             margin: auto auto;
             display: block;
@@ -52,18 +67,22 @@
             background-color: white;
             min-width: 300px;
             max-width: 900px;
-            padding: 5px;
-            margin: -15px auto auto;
+            padding: 1px;
+            margin:auto auto;
             box-shadow: 0px 0px 15px -3px black;
         }
         main > p {
             text-indent: 15px;
             text-align: center;
         }
-        nav {
+        menu {
+            display: none;
             margin: -25px 0px 20px 0px;
         }
-        nav > a {
+        menu > ul {
+            list-style-type: none;
+        }
+        menu > ul > li > a {
             color: rgba(255, 255, 255, 0.76);
             text-decoration: none;
             padding: 10px;
@@ -106,8 +125,6 @@
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             text-shadow: 0px 2px 5px black;
-            margin: 12px 23px -13px;
-            padding:0px 0px 34px;
         
         }
         .paragrafo {
@@ -186,24 +203,67 @@
             padding: 10px;
             margin: 250px 0px 0px 0px;
         }
-        @media screen and (max-width:400px) {
+        @media screen and (max-width:768px) {
             aside{
             height: 800px;
             margin: auto auto;
-        } 
         }
+        span#burguer {
+            display: block;
+        }
+        menu {
+            display: none;
+
+        }
+        menu > ul {
+            margin: 10px 10px 10px;
+            list-style-type: none;
+        }
+        menu > ul > li > a {
+            margin-right: 0px;
+            margin-left: -88px;
+            color: white;
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        menu > ul > li > a:hover {
+       background-color: rgb(255, 255, 255);
+       color: rgb(0, 41, 0);
+        };
+}
+@media screen and (min-width: 769px) {
+    menu {
+        display: block;
+    }
+    menu > ul {
+        margin: 0px 0px -26px -65px;
+    }
+    menu > ul > li {
+        display: inline-block;
+    }
+}
     </style>
 </head>
 <body>
+    <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span>
     <header>
         <h1 class="TituloPrincipal">CURIOSIDADES DE TECNOLOGIA</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo<br> 
             Tech, em um único Lugar.</p>
-    </header>  
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Notícias</a>
-    </nav>
+    
+    <menu id="itens">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Notícias</a></li>
+        <li><a href="#">Perguntas</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Doação</a></li>
+    </ul> 
+    </menu>
+</header>      
     <div id="TUDO NO MEIO">
 <main>
         <section class="História">
@@ -270,5 +330,14 @@
     <footer>
         <p>Site criado por Alyson</p>
     </footer>
+    <script>
+        function clickMenu() {
+            if(itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
